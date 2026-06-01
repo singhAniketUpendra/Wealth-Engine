@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://wealthengine-api-hfc4cwefapeqbddw.centralindia-01.azurewebsites.net/', //
+    baseURL: 'https://wealthengine-api-hfc4cwefapeqbddw.centralindia-01.azurewebsites.net/api', //
     headers: {
         'Content-Type': 'application/json',
     },
