@@ -310,7 +310,7 @@ const PortfolioDetails = () => {
                                             {portfolioHistory.length === 0 ? (
                                                 <tr>
                                                     <td colSpan="7" className="text-center text-muted py-4 small">
-                                                        Bhai, is specific bag mein abhi tak koi buy/sell transactions records logged nahi hain.
+                                                       No buy/sell transaction records are logged in this specific bag yet.
                                                     </td>
                                                 </tr>
                                             ) : (

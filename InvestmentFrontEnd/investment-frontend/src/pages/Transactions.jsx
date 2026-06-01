@@ -126,7 +126,7 @@ const Transactions = () => {
                                 {filteredTransactions.length === 0 ? (
                                     <tr>
                                         <td colSpan="7" className="text-center text-muted py-5 small">
-                                            Bhai, is criteria mein koi matching trades data records nahi mile database ledger mein.
+                                            No Transaction record found!
                                         </td>
                                     </tr>
                                 ) : (

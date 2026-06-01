@@ -74,11 +74,11 @@ const AdminAccount = () => {
 
         if (newPassword !== '') {
             if (currentPassword === '') {
-                setError('Bhai, password badalne ke liye pehle apna real (current) password daalo!');
+                setError('To change your password, you must first enter your current password!');
                 return;
             }
             if (newPassword !== confirmNewPassword) {
-                setError('Naya password aur confirm password ek-doosre se match nahi kar rahe hain!');
+                setError('The new password and confirm password do not match!');
                 return;
             }
             targetedPassword = newPassword;
@@ -116,7 +116,7 @@ const AdminAccount = () => {
 
     // 🗑️ 🔥 ADMINISTRATIVE ACCOUNT RETIREMENT SEQUENCING
     const handleAccountSoftDelete = async () => {
-        const firstCheck = window.confirm('🚨 WARNING: Bhai, kya aap sach mein is Admin account ko system se remove karna chahte hain? Pura terminal access instantly revoke ho jayega.');
+        const firstCheck = window.confirm('🚨 WARNING: Are you sure you want to remove this Admin account from the system?');
         if (!firstCheck) return;
 
         const finalVerification = window.prompt('Confirm karne ke liye apna ADMIN "USERNAME" capital letters mein type karein:');

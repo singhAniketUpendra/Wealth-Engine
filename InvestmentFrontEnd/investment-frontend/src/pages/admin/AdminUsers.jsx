@@ -95,7 +95,7 @@ const AdminUsers = () => {
 
     // 4. Handler for User Hard Deletion (DELETE /api/Users/{id})
     const handleDeleteUser = async (id, targetName) => {
-        if (window.confirm(`Bhai, kya aap sach mein ${targetName} ka account permanently delete karna chahte hain?`)) {
+        if (window.confirm(`Are you sure you want to permanently delete ${targetName}'s account?`)) {
             try {
                 await API.delete(`/Users/${id}`);
                 fetchUsers();

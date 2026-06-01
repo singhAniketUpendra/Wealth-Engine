@@ -46,7 +46,7 @@ const Login = () => {
                     <h2 className="fw-extrabold text-dark tracking-tight mb-1" style={{ fontSize: '1.75rem' }}>
                         Wealth<span className="text-primary">Engine</span>
                     </h2>
-                    <p className="text-muted small fw-semibold text-uppercase tracking-wider">Institutional Portfolio Gateway</p>
+                    <p className="text-muted small fw-semibold text-uppercase tracking-wider">Investment Portfolio Gateway</p>
                 </div>
 
                 {/* Error Alert Box */}

@@ -53,7 +53,7 @@ const Register = () => {
                     <h2 className="fw-extrabold text-dark tracking-tight mb-1" style={{ fontSize: '1.75rem' }}>
                         Wealth<span className="text-primary">Engine</span>
                     </h2>
-                    <p className="text-muted small fw-semibold text-uppercase tracking-wider">Initialize Investor Node Identity</p>
+                    <p className="text-muted small fw-semibold text-uppercase tracking-wider">Investment Portfolio Gateway</p>
                 </div>
 
                 {/* Success Alert */}
@@ -123,7 +123,7 @@ const Register = () => {
                         {loading ? (
                             <>
                                 <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                                Deploying Profile Record...
+                                Processing...
                             </>
                         ) : (
                             'Register'

@@ -74,11 +74,11 @@ const Account = () => {
 
         if (newPassword !== '') {
             if (currentPassword === '') {
-                setError('Bhai, password badalne ke liye pehle apna real (current) password daalo!');
+                setError('To change your password, first enter your current password!');
                 return;
             }
             if (newPassword !== confirmNewPassword) {
-                setError('Naya password aur confirm password ek-doosre se match nahi kar rahe hain!');
+                setError('The new password and confirm password do not match!');
                 return;
             }
             targetedPassword = newPassword;
@@ -107,7 +107,7 @@ const Account = () => {
 
     // 🗑️ 🔥 FAIL-PROOF ACCOUNT DELETION & IMMEDIATE LOGOUT TRIGGER
     const handleAccountSoftDelete = async () => {
-        const firstCheck = window.confirm('Bhai, kya aap sach mein apna account system se remove karna chahte hain? Sabhi portfolio bags freeze ho jayenge.');
+        const firstCheck = window.confirm('Are you sure you want to remove your account from the system? All portfolio bags will be frozen.');
         if (!firstCheck) return;
 
         const finalVerification = window.prompt('Confirm karne ke liye apna "USERNAME" capital letters mein type karein:');

@@ -141,7 +141,7 @@ const Dashboard = () => {
     };
 
     const handleDeletePortfolio = async (id) => {
-        if (window.confirm('Bhai, kya aap sach mein is portfolio ko delete karna chahte hain?')) {
+        if (window.confirm('Are you sure to delete portfolio ?')) {
             try {
                 await deletePortfolio(id);
                 await masterFetchAndCalculate();

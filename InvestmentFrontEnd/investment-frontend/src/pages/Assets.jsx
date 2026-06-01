@@ -96,7 +96,7 @@ const Assets = () => {
 
     // Handler for Asset Deletion (Endpoint 6)
     const handleDelete = async (id) => {
-        if (window.confirm('Bhai sach mein udana hai ye Asset? Portfolio mapping check kar lena!')) {
+        if (window.confirm('Do you really want to delete this asset?')) {
             try {
                 await deleteAsset(id); // Endpoint 6
                 fetchAssets();
