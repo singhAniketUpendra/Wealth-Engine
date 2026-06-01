@@ -64,7 +64,7 @@ const Login = () => {
                         <input
                             type="email"
                             className="form-control form-control-lg custom-input bg-light border-0 px-3 py-2 fs-6"
-                            placeholder="name@example.com"
+                            placeholder="name@email.com"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
